@@ -1,0 +1,10 @@
+﻿<div ng-controller="attendeesController as attendeesVm">
+    <h1>All Attendees</h1>
+    <ul>
+        <li ng-repeat="attendee in attendeesVm.attendees">
+            <a ng-href="#/attendees/{{attendee.id}}">{{attendee.name}}</a>
+        </li>
+    </ul>
+
+    <a class="btn btn-primary" ng-href="#/attendees/create">+ Insert new attendee</a>
+</div>

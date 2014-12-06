@@ -1,0 +1,9 @@
+﻿<div ng-controller="newAttendeeController as newVm">
+    <form role="form" class="col-xs-3" ng-submit="newVm.createAttendee()">
+        <div class="form-group">
+            <label for="Name">Name</label>
+            <input type="text" class="form-control" name="Name" id="Name" ng-model="newVm.name" />
+        </div>
+        <button class="btn btn-primary" type="submit">Save Name</button>
+    </form>
+</div>

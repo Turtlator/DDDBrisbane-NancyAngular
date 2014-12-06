@@ -1,0 +1,12 @@
+﻿@Master['Master']
+
+@Section['Content']
+<h1>All Attendees</h1>
+<ul>
+    @Each.Model.Attendees
+    <li><a href="/Attendees/@Current.Id">@Current.Name</a></li>
+    @EndEach
+</ul>
+
+<a class="btn btn-primary" href="/Attendee/new">+ Insert new attendee</a>
+@EndSection
